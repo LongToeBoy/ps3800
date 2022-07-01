@@ -1,53 +1,99 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
-    
-        
-</head>
-<body style="background-color: 51;">
-    <div class="container">
-        <div id="pdf">
-            <p>
-              <font size="3" color="red">print this to pdf</font>
-            </p>
-          </div>
-          <button onclick="printDiv('pdf','Title')">print div</button>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+    />
 
-<button onclick="saveDiv('pdf','Title')">save div as pdf</button>
+    <!-- CSS Reset -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+
+    <!-- Milligram CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body style="background-color: 51">
+    <div class="container">
+      <div id="pdf">
+        <header>
+          <h4>U.S. Postal Service™</h2>
+          <h3>CERTIFIED MAIL® RECEIPT</h1>
+          <h5>Domestic Mail Only</h3>
+        </header>
+        <nav>
+            For delivery information, visit our website at www.usps.com ®.
+            <h3>OFFICIAL USE</h3>
+        </nav>
+        <div class="pricing" style="display: flex;">
+            <div >
+                <section>
+                    <p>Certified Mail Fee</p>
+                    <input type="text" class="currencyInput">
+                </section>
+                <section>
+                    <p>Extra Services & Fees (check box, add fee as appropriate)</p>
+                <label ><input type="checkbox" id="hardcopy">
+                Return Receipt (hardcopy)<input type="text" class="currencyInput"></label>
+                <label ><input type="checkbox" id="electronic">
+                Return Receipt (electronic)<input type="text" class="currencyInput"></label>
+                <label ><input type="checkbox" id="Restricted">
+                Certified Mail Restricted Delivery<input type="text" class="currencyInput"></label>
+                <label ><input type="checkbox" id="Signature">
+                Adult Signature Required<input type="text" class="currencyInput"></label>
+                <label ><input type="checkbox" id="RestrictedSign">
+                Adult Signature Restricted Delivery <input type="text" class="currencyInput"> </label>
+                  </section>
+                <section>
+                    <p>Postage</p>
+                    <input type="text" class="currencyInput">
+                </section>
+                <section>
+                    <p><b>Total Postage and Fees</b></p>
+                    <input type="text" class="currencyInput">
+                </section>
+            </div>
+            <aside>Postmark Here</aside>
+
+        </div>
+        
+        <div class="footer">
+            <section>
+            <p>Sent To</p>
+            <input type="text">
+        </section>
+            <section>
+            <p>Street and Apt. No., or PO Box No.</p>
+            <input type="text">
+        </section>
+            <section>
+                <p>City, State, ZIP+4</p>
+                <input type="text">
+            </section>
+        <footer>
+            PS FORM&nbsp;<b>3800</b>, April 2015
+            PSN 7530-02-000-9047&nbsp;
+            <b>SEE Reverse For Instructions</b>
+        </footer>
+      </div></div>
+
+      <button onclick="saveDiv('pdf','Title')">Print</button>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+    <script src="./index.js"></script>
+    <!-- Google Fonts -->
+    
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
-<script src="./index.js"></script>
-<!-- Google Fonts -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
-
-<!-- CSS Reset -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-
-<!-- Milligram CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
-
-<!-- You should properly set the path from the main file. -->
-</body>
+    <!-- You should properly set the path from the main file. -->
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

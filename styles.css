@@ -1,5 +1,101 @@
 .container {
-    margin:auto;
-    display: grid;
-    justify-content: center;
+  margin: 0;
+  display: grid;
+  justify-content: center;
+}
+p {
+  margin-bottom: 5px;
+}
+#pdf {
+  width: 660px;
+  background-color: white;
+  border-color: rgba(0, 154, 102, 1);
+  display: inline;
+  margin-bottom: 15px;
+}
+h3,
+h4,
+h5 {
+  margin-bottom: 0px;
+}
+label {
+  display: flex;
+  font-weight: normal;
+}
+label input[type="text"] {
+  width: 100px;
+  margin-left: auto;
+}
+input[type="checkbox"] {
+  margin: 0 10px 0 0;
+}
+header {
+  background-color: rgba(0, 154, 102, 1);
+  color: white;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px 20px;
+  margin: 0px 0px 10px;
+}
+
+nav {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 154, 102, 1);
+}
+nav h3 {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: white;
+  border-color: rgba(0, 154, 102, 1);
+  border-width: thin;
+  border-style: none solid solid solid;
+  color: rgba(0, 154, 102, 0.3);
+  letter-spacing: 15px;
+}
+section {
+  padding: 0 10px;
+  margin: 0;
+  color: rgba(0, 154, 102, 0.9);
+  border-color: rgba(0, 154, 102, 1);
+  border-width: thin;
+  border-style: none solid solid;
+}
+
+input[type="text"] {
+  border-style: none none dashed;
+  margin-bottom: 10px;
+  height: 15px;
+}
+aside {
+  height: 100px;
+  width: 30%;
+  margin: auto;
+  text-align: center;
+}
+footer {
+  display: flex;
+  margin-top: 15px;
+  padding-left: 10px;
+  background-color: rgba(0, 154, 102, 1);
+  color: white;
+  justify-content: center;
+  font-style: normal;
+}
+.footer {
+  position: relative;
+  bottom: 0;
+  height: auto;
+  border-color: rgba(0, 154, 102, 1);
+  border-width: thin;
+  border-style: solid;
+  font-style: italic;
+}
+.footer section {
+  border-color: rgba(0, 154, 102, 1);
+  border-width: thin;
+  border-style: dotted none none;
 }
