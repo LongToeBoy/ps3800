@@ -1,5 +1,5 @@
 .container {
-  margin: 0;
+  margin: auto;
   display: grid;
   justify-content: center;
 }
